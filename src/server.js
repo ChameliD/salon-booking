@@ -13,6 +13,5 @@ server.use("/api",router);
 
 dbConnection();
 server.listen(port,function(){
-    //console.log('hi',process.env)
     console.log('server started at port:',port);
 })
