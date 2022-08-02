@@ -1,4 +1,5 @@
 const mongoose=require("mongoose")
+
 const booking=mongoose.model("bookingList",new mongoose.Schema({
     
     service:{
@@ -13,14 +14,15 @@ const booking=mongoose.model("bookingList",new mongoose.Schema({
         type:String,
         required:true,
     },
-    /*bookingDate:{
+    bookingDate:{
         type:Date,
+        //format:'YYYY-MM-DD',
         required:true,
     },
     bookingTime:{
-        type:Time,
+        type:String,
         required:true,
-    }*/
+    }
 }))
 
 module.exports = booking;
