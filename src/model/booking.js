@@ -13,14 +13,14 @@ const booking=mongoose.model("bookingList",new mongoose.Schema({
         type:String,
         required:true,
     },
-    date:{
+    /*bookingDate:{
         type:Date,
         required:true,
     },
-    time:{
+    bookingTime:{
         type:Time,
         required:true,
-    }
+    }*/
 }))
 
 module.exports = booking;
