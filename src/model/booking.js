@@ -12,17 +12,22 @@ const booking=mongoose.model("bookingList",new mongoose.Schema({
     },
     lastName:{
         type:String,
-       // required:true,
+        required:true,
+    },
+    email:{
+        type:String,
+        require:true,
     },
     bookingDate:{
         type:Date,
         //format:'YYYY-MM-DD',
-       // required:true,
+        required:true,
     },
     bookingTime:{
         type:String,
-       // required:true,
+        required:true,
     }
+
     
 }))
 
