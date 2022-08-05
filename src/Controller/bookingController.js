@@ -1,11 +1,12 @@
 const booking=require("../model/booking")
 module.exports.create=async function(req,res){
-    const{service,firstName,lastName,bookingDate,bookingTime}=req.body;
+    const{service,firstName,lastName,email,bookingDate,bookingTime}=req.body;
     try{
         const resp=await booking.create({
             service:service,
             firstName:firstName,
             lastName:lastName,
+            email:email,
             bookingDate:bookingDate,
             bookingTime:bookingTime,
     
