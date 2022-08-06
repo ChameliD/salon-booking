@@ -16,7 +16,8 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "http-proxy": "^1.18.1",
-    "mongoose": "^6.5.0"
+    "mongoose": "^6.5.0",
+    "stripe": "^10.0.0"
   },
   "devDependencies": {
     "http-proxy-middleware": "^2.0.6",
