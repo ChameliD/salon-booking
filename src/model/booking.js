@@ -25,7 +25,7 @@ const booking=mongoose.model("bookingList",new mongoose.Schema({
     },
     bookingTime:{
         type:String,
-        required:true,
+        //required:true,
     }
 
     

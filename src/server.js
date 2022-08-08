@@ -1,11 +1,12 @@
 const express= require('express');
-require('dotenv').config();
+require("dotenv").config();
 const bodyParser=require('body-parser');
 const dbConnection=require('./db/connection');
 const server=express();
 const router =require("./route/");
 var cors = require('cors')
-const port=process.env.PORT| 3001;
+
+const port= process.env.PORT || 3002;
 server.use(cors());
 const { createProxyMiddleware } = require('http-proxy-middleware');
 server.use(bodyParser.json())
